@@ -13,6 +13,14 @@ public class Role implements GrantedAuthority {
         this.role = role;
     }
 
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", role='" + role + '\'' +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }
